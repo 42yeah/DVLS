@@ -7,10 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F14720BE249B36550073BB18 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F14720BD249B36550073BB18 /* main.cpp */; };
+		F14720C5249B367C0073BB18 /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F14720C3249B367C0073BB18 /* libsfml-system.2.5.1.dylib */; };
+		F14720C6249B367C0073BB18 /* libsfml-system.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F14720C3249B367C0073BB18 /* libsfml-system.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F14720C7249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F14720C4249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib */; };
+		F14720C8249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F14720C4249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F14720CF249B37860073BB18 /* libsfml-window.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F14720CE249B37860073BB18 /* libsfml-window.2.5.1.dylib */; };
+		F14720D0249B37860073BB18 /* libsfml-window.2.5.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F14720CE249B37860073BB18 /* libsfml-window.2.5.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F147217B249B40210073BB18 /* libtgui.0.9.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F147217A249B3FFD0073BB18 /* libtgui.0.9.0.dylib */; };
+		F147217C249B40210073BB18 /* libtgui.0.9.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F147217A249B3FFD0073BB18 /* libtgui.0.9.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F18BF29F2474F1FE00287BE3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F18BF29E2474F1FE00287BE3 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F14720B9249B36550073BB18 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F14720C9249B367C0073BB18 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F147217C249B40210073BB18 /* libtgui.0.9.0.dylib in Embed Libraries */,
+				F14720D0249B37860073BB18 /* libsfml-window.2.5.1.dylib in Embed Libraries */,
+				F14720C6249B367C0073BB18 /* libsfml-system.2.5.1.dylib in Embed Libraries */,
+				F14720C8249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F18BF2992474F1FE00287BE3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,12 +55,183 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F14720BB249B36550073BB18 /* UI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UI; sourceTree = BUILT_PRODUCTS_DIR; };
+		F14720BD249B36550073BB18 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F14720C3249B367C0073BB18 /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
+		F14720C4249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-graphics.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-graphics.2.5.1.dylib"; sourceTree = "<group>"; };
+		F14720CD249B370F0073BB18 /* noto.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = noto.otf; sourceTree = "<group>"; };
+		F14720CE249B37860073BB18 /* libsfml-window.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-window.2.5.1.dylib"; path = "../../../../../usr/local/Cellar/sfml/2.5.1/lib/libsfml-window.2.5.1.dylib"; sourceTree = "<group>"; };
+		F14720D5249B3FFC0073BB18 /* TextureData.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureData.hpp; sourceTree = "<group>"; };
+		F14720D6249B3FFC0073BB18 /* SignalManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SignalManager.hpp; sourceTree = "<group>"; };
+		F14720D7249B3FFC0073BB18 /* TGUI.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TGUI.hpp; sourceTree = "<group>"; };
+		F14720D8249B3FFC0073BB18 /* Event.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		F14720DA249B3FFC0073BB18 /* ChatBoxRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChatBoxRenderer.hpp; sourceTree = "<group>"; };
+		F14720DB249B3FFC0073BB18 /* ListViewRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListViewRenderer.hpp; sourceTree = "<group>"; };
+		F14720DC249B3FFC0073BB18 /* TabsRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TabsRenderer.hpp; sourceTree = "<group>"; };
+		F14720DD249B3FFC0073BB18 /* ProgressBarRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ProgressBarRenderer.hpp; sourceTree = "<group>"; };
+		F14720DE249B3FFC0073BB18 /* LabelRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LabelRenderer.hpp; sourceTree = "<group>"; };
+		F14720DF249B3FFC0073BB18 /* SliderRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SliderRenderer.hpp; sourceTree = "<group>"; };
+		F14720E0249B3FFC0073BB18 /* BoxLayoutRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BoxLayoutRenderer.hpp; sourceTree = "<group>"; };
+		F14720E1249B3FFC0073BB18 /* ComboBoxRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ComboBoxRenderer.hpp; sourceTree = "<group>"; };
+		F14720E2249B3FFC0073BB18 /* WidgetRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WidgetRenderer.hpp; sourceTree = "<group>"; };
+		F14720E3249B3FFC0073BB18 /* ScrollbarRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScrollbarRenderer.hpp; sourceTree = "<group>"; };
+		F14720E4249B3FFC0073BB18 /* KnobRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = KnobRenderer.hpp; sourceTree = "<group>"; };
+		F14720E5249B3FFC0073BB18 /* ButtonRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ButtonRenderer.hpp; sourceTree = "<group>"; };
+		F14720E6249B3FFC0073BB18 /* EditBoxRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EditBoxRenderer.hpp; sourceTree = "<group>"; };
+		F14720E7249B3FFC0073BB18 /* PictureRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PictureRenderer.hpp; sourceTree = "<group>"; };
+		F14720E8249B3FFC0073BB18 /* ScrollablePanelRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScrollablePanelRenderer.hpp; sourceTree = "<group>"; };
+		F14720E9249B3FFC0073BB18 /* MessageBoxRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MessageBoxRenderer.hpp; sourceTree = "<group>"; };
+		F14720EA249B3FFC0073BB18 /* ChildWindowRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChildWindowRenderer.hpp; sourceTree = "<group>"; };
+		F14720EB249B3FFC0073BB18 /* CheckBoxRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CheckBoxRenderer.hpp; sourceTree = "<group>"; };
+		F14720EC249B3FFC0073BB18 /* RadioButtonRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RadioButtonRenderer.hpp; sourceTree = "<group>"; };
+		F14720ED249B3FFC0073BB18 /* RangeSliderRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RangeSliderRenderer.hpp; sourceTree = "<group>"; };
+		F14720EE249B3FFC0073BB18 /* TreeViewRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TreeViewRenderer.hpp; sourceTree = "<group>"; };
+		F14720EF249B3FFC0073BB18 /* PanelRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PanelRenderer.hpp; sourceTree = "<group>"; };
+		F14720F0249B3FFC0073BB18 /* GroupRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GroupRenderer.hpp; sourceTree = "<group>"; };
+		F14720F1249B3FFC0073BB18 /* MenuBarRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MenuBarRenderer.hpp; sourceTree = "<group>"; };
+		F14720F2249B3FFC0073BB18 /* TextBoxRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextBoxRenderer.hpp; sourceTree = "<group>"; };
+		F14720F3249B3FFC0073BB18 /* SpinButtonRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpinButtonRenderer.hpp; sourceTree = "<group>"; };
+		F14720F4249B3FFC0073BB18 /* ListBoxRenderer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListBoxRenderer.hpp; sourceTree = "<group>"; };
+		F14720F5249B3FFC0073BB18 /* Container.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Container.hpp; sourceTree = "<group>"; };
+		F14720F6249B3FFD0073BB18 /* WindowsInclude.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WindowsInclude.hpp; sourceTree = "<group>"; };
+		F14720F7249B3FFD0073BB18 /* Global.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Global.hpp; sourceTree = "<group>"; };
+		F14720F8249B3FFD0073BB18 /* Utf.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Utf.hpp; sourceTree = "<group>"; };
+		F14720F9249B3FFD0073BB18 /* Keyboard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Keyboard.hpp; sourceTree = "<group>"; };
+		F14720FA249B3FFD0073BB18 /* ObjectConverter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ObjectConverter.hpp; sourceTree = "<group>"; };
+		F14720FB249B3FFD0073BB18 /* Clipboard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Clipboard.hpp; sourceTree = "<group>"; };
+		F14720FD249B3FFD0073BB18 /* DataIO.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DataIO.hpp; sourceTree = "<group>"; };
+		F14720FE249B3FFD0073BB18 /* Serializer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Serializer.hpp; sourceTree = "<group>"; };
+		F14720FF249B3FFD0073BB18 /* Theme.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Theme.hpp; sourceTree = "<group>"; };
+		F1472100249B3FFD0073BB18 /* ThemeLoader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ThemeLoader.hpp; sourceTree = "<group>"; };
+		F1472101249B3FFD0073BB18 /* Deserializer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Deserializer.hpp; sourceTree = "<group>"; };
+		F1472102249B3FFD0073BB18 /* WidgetFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = WidgetFactory.hpp; sourceTree = "<group>"; };
+		F1472103249B3FFD0073BB18 /* TextStyle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextStyle.hpp; sourceTree = "<group>"; };
+		F1472104249B3FFD0073BB18 /* ToolTip.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ToolTip.hpp; sourceTree = "<group>"; };
+		F1472105249B3FFD0073BB18 /* Animation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Animation.hpp; sourceTree = "<group>"; };
+		F1472106249B3FFD0073BB18 /* Filesystem.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Filesystem.hpp; sourceTree = "<group>"; };
+		F1472107249B3FFD0073BB18 /* Gui.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Gui.hpp; sourceTree = "<group>"; };
+		F1472108249B3FFD0073BB18 /* Signal.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Signal.hpp; sourceTree = "<group>"; };
+		F1472109249B3FFD0073BB18 /* DefaultFont.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DefaultFont.hpp; sourceTree = "<group>"; };
+		F147210A249B3FFD0073BB18 /* AbsoluteOrRelativeValue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = AbsoluteOrRelativeValue.hpp; sourceTree = "<group>"; };
+		F147210B249B3FFD0073BB18 /* Rect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rect.hpp; sourceTree = "<group>"; };
+		F147210C249B3FFD0073BB18 /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		F147210D249B3FFD0073BB18 /* Variant.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Variant.hpp; sourceTree = "<group>"; };
+		F147210F249B3FFD0073BB18 /* Dispatch.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dispatch.hpp; sourceTree = "<group>"; };
+		F1472111249B3FFD0073BB18 /* Hash.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Hash.hpp; sourceTree = "<group>"; };
+		F1472112249B3FFD0073BB18 /* Downcast.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Downcast.hpp; sourceTree = "<group>"; };
+		F1472113249B3FFD0073BB18 /* Any.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Any.hpp; sourceTree = "<group>"; };
+		F1472114249B3FFD0073BB18 /* PImpl.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PImpl.hpp; sourceTree = "<group>"; };
+		F1472115249B3FFD0073BB18 /* Swap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Swap.hpp; sourceTree = "<group>"; };
+		F1472116249B3FFD0073BB18 /* Optional.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Optional.hpp; sourceTree = "<group>"; };
+		F1472117249B3FFD0073BB18 /* NamedTuple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NamedTuple.hpp; sourceTree = "<group>"; };
+		F1472118249B3FFD0073BB18 /* Typeid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Typeid.hpp; sourceTree = "<group>"; };
+		F1472119249B3FFD0073BB18 /* ForEach.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ForEach.hpp; sourceTree = "<group>"; };
+		F147211A249B3FFD0073BB18 /* Exceptions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exceptions.hpp; sourceTree = "<group>"; };
+		F147211B249B3FFD0073BB18 /* SafeBool.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SafeBool.hpp; sourceTree = "<group>"; };
+		F147211C249B3FFD0073BB18 /* Algorithms.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Algorithms.hpp; sourceTree = "<group>"; };
+		F147211D249B3FFD0073BB18 /* NonCopyable.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NonCopyable.hpp; sourceTree = "<group>"; };
+		F147211F249B3FFD0073BB18 /* DoubleDispatcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleDispatcher.hpp; sourceTree = "<group>"; };
+		F1472121249B3FFD0073BB18 /* DoubleDispatcher.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = DoubleDispatcher.inl; sourceTree = "<group>"; };
+		F1472122249B3FFD0073BB18 /* SingleDispatcher.inl */ = {isa = PBXFileReference; lastKnownFileType = text; path = SingleDispatcher.inl; sourceTree = "<group>"; };
+		F1472123249B3FFD0073BB18 /* DispatchTraits.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DispatchTraits.hpp; sourceTree = "<group>"; };
+		F1472124249B3FFD0073BB18 /* SingleDispatcher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SingleDispatcher.hpp; sourceTree = "<group>"; };
+		F1472125249B3FFD0073BB18 /* Config.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		F1472127249B3FFD0073BB18 /* Templates.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Templates.hpp; sourceTree = "<group>"; };
+		F1472128249B3FFD0073BB18 /* Tuple.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tuple.hpp; sourceTree = "<group>"; };
+		F1472129249B3FFD0073BB18 /* Variadic.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Variadic.hpp; sourceTree = "<group>"; };
+		F147212A249B3FFD0073BB18 /* Preprocessor.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Preprocessor.hpp; sourceTree = "<group>"; };
+		F147212B249B3FFD0073BB18 /* Tools.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tools.hpp; sourceTree = "<group>"; };
+		F147212C249B3FFD0073BB18 /* Meta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Meta.hpp; sourceTree = "<group>"; };
+		F147212D249B3FFD0073BB18 /* SmartPtr.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SmartPtr.hpp; sourceTree = "<group>"; };
+		F147212E249B3FFD0073BB18 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F1472130249B3FFD0073BB18 /* CopiedPtr.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CopiedPtr.hpp; sourceTree = "<group>"; };
+		F1472131249B3FFD0073BB18 /* ClonersAndDeleters.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClonersAndDeleters.hpp; sourceTree = "<group>"; };
+		F1472133249B3FFD0073BB18 /* PtrOwner.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PtrOwner.hpp; sourceTree = "<group>"; };
+		F1472134249B3FFD0073BB18 /* Factories.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Factories.hpp; sourceTree = "<group>"; };
+		F1472135249B3FFD0073BB18 /* MakeUnique.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MakeUnique.hpp; sourceTree = "<group>"; };
+		F1472136249B3FFD0073BB18 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		F1472137249B3FFD0073BB18 /* TextureManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextureManager.hpp; sourceTree = "<group>"; };
+		F1472138249B3FFD0073BB18 /* Clipping.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Clipping.hpp; sourceTree = "<group>"; };
+		F1472139249B3FFD0073BB18 /* SubwidgetContainer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SubwidgetContainer.hpp; sourceTree = "<group>"; };
+		F147213A249B3FFD0073BB18 /* RelFloatRect.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RelFloatRect.hpp; sourceTree = "<group>"; };
+		F147213B249B3FFD0073BB18 /* Any.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Any.hpp; sourceTree = "<group>"; };
+		F147213C249B3FFD0073BB18 /* Sprite.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Sprite.hpp; sourceTree = "<group>"; };
+		F147213D249B3FFD0073BB18 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		F147213E249B3FFD0073BB18 /* CopiedSharedPtr.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CopiedSharedPtr.hpp; sourceTree = "<group>"; };
+		F147213F249B3FFD0073BB18 /* Layout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Layout.hpp; sourceTree = "<group>"; };
+		F1472140249B3FFD0073BB18 /* Optional.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Optional.hpp; sourceTree = "<group>"; };
+		F1472141249B3FFD0073BB18 /* Font.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Font.hpp; sourceTree = "<group>"; };
+		F1472142249B3FFD0073BB18 /* Texture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Texture.hpp; sourceTree = "<group>"; };
+		F1472143249B3FFD0073BB18 /* Outline.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Outline.hpp; sourceTree = "<group>"; };
+		F1472144249B3FFD0073BB18 /* SvgImage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SvgImage.hpp; sourceTree = "<group>"; };
+		F1472145249B3FFD0073BB18 /* String.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = String.hpp; sourceTree = "<group>"; };
+		F1472146249B3FFD0073BB18 /* Config.hpp.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Config.hpp.in; sourceTree = "<group>"; };
+		F1472147249B3FFD0073BB18 /* Color.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Color.hpp; sourceTree = "<group>"; };
+		F1472148249B3FFD0073BB18 /* RendererDefines.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RendererDefines.hpp; sourceTree = "<group>"; };
+		F1472149249B3FFD0073BB18 /* Widget.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Widget.hpp; sourceTree = "<group>"; };
+		F147214A249B3FFD0073BB18 /* CustomWidgetForBindings.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CustomWidgetForBindings.hpp; sourceTree = "<group>"; };
+		F147214B249B3FFD0073BB18 /* Duration.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Duration.hpp; sourceTree = "<group>"; };
+		F147214C249B3FFD0073BB18 /* Text.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Text.hpp; sourceTree = "<group>"; };
+		F147214E249B3FFD0073BB18 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		F147214F249B3FFD0073BB18 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F1472150249B3FFD0073BB18 /* nanosvg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanosvg.h; sourceTree = "<group>"; };
+		F1472151249B3FFD0073BB18 /* nanosvgrast.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nanosvgrast.h; sourceTree = "<group>"; };
+		F1472153249B3FFD0073BB18 /* TextBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TextBox.hpp; sourceTree = "<group>"; };
+		F1472154249B3FFD0073BB18 /* ListBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListBox.hpp; sourceTree = "<group>"; };
+		F1472155249B3FFD0073BB18 /* Tabs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Tabs.hpp; sourceTree = "<group>"; };
+		F1472156249B3FFD0073BB18 /* ChatBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChatBox.hpp; sourceTree = "<group>"; };
+		F1472157249B3FFD0073BB18 /* Slider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Slider.hpp; sourceTree = "<group>"; };
+		F1472158249B3FFD0073BB18 /* HorizontalLayout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HorizontalLayout.hpp; sourceTree = "<group>"; };
+		F1472159249B3FFD0073BB18 /* Group.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Group.hpp; sourceTree = "<group>"; };
+		F147215A249B3FFD0073BB18 /* ProgressBar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ProgressBar.hpp; sourceTree = "<group>"; };
+		F147215B249B3FFD0073BB18 /* ScrollablePanel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ScrollablePanel.hpp; sourceTree = "<group>"; };
+		F147215C249B3FFD0073BB18 /* ComboBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ComboBox.hpp; sourceTree = "<group>"; };
+		F147215D249B3FFD0073BB18 /* Label.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Label.hpp; sourceTree = "<group>"; };
+		F147215E249B3FFD0073BB18 /* Grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Grid.hpp; sourceTree = "<group>"; };
+		F147215F249B3FFD0073BB18 /* Knob.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Knob.hpp; sourceTree = "<group>"; };
+		F1472160249B3FFD0073BB18 /* EditBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EditBox.hpp; sourceTree = "<group>"; };
+		F1472161249B3FFD0073BB18 /* HorizontalWrap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = HorizontalWrap.hpp; sourceTree = "<group>"; };
+		F1472162249B3FFD0073BB18 /* BoxLayout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BoxLayout.hpp; sourceTree = "<group>"; };
+		F1472163249B3FFD0073BB18 /* MenuBar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MenuBar.hpp; sourceTree = "<group>"; };
+		F1472164249B3FFD0073BB18 /* RadioButtonGroup.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RadioButtonGroup.hpp; sourceTree = "<group>"; };
+		F1472165249B3FFD0073BB18 /* RadioButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RadioButton.hpp; sourceTree = "<group>"; };
+		F1472166249B3FFD0073BB18 /* TreeView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TreeView.hpp; sourceTree = "<group>"; };
+		F1472167249B3FFD0073BB18 /* ClickableWidget.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ClickableWidget.hpp; sourceTree = "<group>"; };
+		F1472168249B3FFD0073BB18 /* MessageBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MessageBox.hpp; sourceTree = "<group>"; };
+		F1472169249B3FFD0073BB18 /* RangeSlider.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RangeSlider.hpp; sourceTree = "<group>"; };
+		F147216A249B3FFD0073BB18 /* Panel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Panel.hpp; sourceTree = "<group>"; };
+		F147216B249B3FFD0073BB18 /* BitmapButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BitmapButton.hpp; sourceTree = "<group>"; };
+		F147216C249B3FFD0073BB18 /* CheckBox.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CheckBox.hpp; sourceTree = "<group>"; };
+		F147216D249B3FFD0073BB18 /* ListView.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ListView.hpp; sourceTree = "<group>"; };
+		F147216E249B3FFD0073BB18 /* Button.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Button.hpp; sourceTree = "<group>"; };
+		F147216F249B3FFD0073BB18 /* VerticalLayout.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = VerticalLayout.hpp; sourceTree = "<group>"; };
+		F1472170249B3FFD0073BB18 /* SpinButton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SpinButton.hpp; sourceTree = "<group>"; };
+		F1472171249B3FFD0073BB18 /* BoxLayoutRatios.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BoxLayoutRatios.hpp; sourceTree = "<group>"; };
+		F1472172249B3FFD0073BB18 /* Scrollbar.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Scrollbar.hpp; sourceTree = "<group>"; };
+		F1472173249B3FFD0073BB18 /* Picture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Picture.hpp; sourceTree = "<group>"; };
+		F1472174249B3FFD0073BB18 /* Canvas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Canvas.hpp; sourceTree = "<group>"; };
+		F1472175249B3FFD0073BB18 /* ChildWindow.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ChildWindow.hpp; sourceTree = "<group>"; };
+		F1472176249B3FFD0073BB18 /* Exception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
+		F1472177249B3FFD0073BB18 /* Vector2.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Vector2.hpp; sourceTree = "<group>"; };
+		F1472179249B3FFD0073BB18 /* libtgui.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtgui.dylib; sourceTree = "<group>"; };
+		F147217A249B3FFD0073BB18 /* libtgui.0.9.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libtgui.0.9.0.dylib; sourceTree = "<group>"; };
 		F18BF29B2474F1FE00287BE3 /* dvls */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dvls; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18BF29E2474F1FE00287BE3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F18BF2A524751B4400287BE3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F14720B8249B36550073BB18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F147217B249B40210073BB18 /* libtgui.0.9.0.dylib in Frameworks */,
+				F14720CF249B37860073BB18 /* libsfml-window.2.5.1.dylib in Frameworks */,
+				F14720C5249B367C0073BB18 /* libsfml-system.2.5.1.dylib in Frameworks */,
+				F14720C7249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F18BF2982474F1FE00287BE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,12 +242,323 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F14720BC249B36550073BB18 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F14720BD249B36550073BB18 /* main.cpp */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F14720C2249B367C0073BB18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F14720CE249B37860073BB18 /* libsfml-window.2.5.1.dylib */,
+				F14720C4249B367C0073BB18 /* libsfml-graphics.2.5.1.dylib */,
+				F14720C3249B367C0073BB18 /* libsfml-system.2.5.1.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F14720CA249B368A0073BB18 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F14720CD249B370F0073BB18 /* noto.otf */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F14720D1249B3F8B0073BB18 /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				F14720D2249B3FFC0073BB18 /* TGUI */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+		F14720D2249B3FFC0073BB18 /* TGUI */ = {
+			isa = PBXGroup;
+			children = (
+				F14720D3249B3FFC0073BB18 /* include */,
+				F1472178249B3FFD0073BB18 /* lib */,
+			);
+			path = TGUI;
+			sourceTree = "<group>";
+		};
+		F14720D3249B3FFC0073BB18 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F14720D4249B3FFC0073BB18 /* TGUI */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F14720D4249B3FFC0073BB18 /* TGUI */ = {
+			isa = PBXGroup;
+			children = (
+				F14720D5249B3FFC0073BB18 /* TextureData.hpp */,
+				F14720D6249B3FFC0073BB18 /* SignalManager.hpp */,
+				F14720D7249B3FFC0073BB18 /* TGUI.hpp */,
+				F14720D8249B3FFC0073BB18 /* Event.hpp */,
+				F14720D9249B3FFC0073BB18 /* Renderers */,
+				F14720F5249B3FFC0073BB18 /* Container.hpp */,
+				F14720F6249B3FFD0073BB18 /* WindowsInclude.hpp */,
+				F14720F7249B3FFD0073BB18 /* Global.hpp */,
+				F14720F8249B3FFD0073BB18 /* Utf.hpp */,
+				F14720F9249B3FFD0073BB18 /* Keyboard.hpp */,
+				F14720FA249B3FFD0073BB18 /* ObjectConverter.hpp */,
+				F14720FB249B3FFD0073BB18 /* Clipboard.hpp */,
+				F14720FC249B3FFD0073BB18 /* Loading */,
+				F1472103249B3FFD0073BB18 /* TextStyle.hpp */,
+				F1472104249B3FFD0073BB18 /* ToolTip.hpp */,
+				F1472105249B3FFD0073BB18 /* Animation.hpp */,
+				F1472106249B3FFD0073BB18 /* Filesystem.hpp */,
+				F1472107249B3FFD0073BB18 /* Gui.hpp */,
+				F1472108249B3FFD0073BB18 /* Signal.hpp */,
+				F1472109249B3FFD0073BB18 /* DefaultFont.hpp */,
+				F147210A249B3FFD0073BB18 /* AbsoluteOrRelativeValue.hpp */,
+				F147210B249B3FFD0073BB18 /* Rect.hpp */,
+				F147210C249B3FFD0073BB18 /* Config.hpp */,
+				F147210D249B3FFD0073BB18 /* Variant.hpp */,
+				F147210E249B3FFD0073BB18 /* Aurora */,
+				F1472137249B3FFD0073BB18 /* TextureManager.hpp */,
+				F1472138249B3FFD0073BB18 /* Clipping.hpp */,
+				F1472139249B3FFD0073BB18 /* SubwidgetContainer.hpp */,
+				F147213A249B3FFD0073BB18 /* RelFloatRect.hpp */,
+				F147213B249B3FFD0073BB18 /* Any.hpp */,
+				F147213C249B3FFD0073BB18 /* Sprite.hpp */,
+				F147213D249B3FFD0073BB18 /* Timer.hpp */,
+				F147213E249B3FFD0073BB18 /* CopiedSharedPtr.hpp */,
+				F147213F249B3FFD0073BB18 /* Layout.hpp */,
+				F1472140249B3FFD0073BB18 /* Optional.hpp */,
+				F1472141249B3FFD0073BB18 /* Font.hpp */,
+				F1472142249B3FFD0073BB18 /* Texture.hpp */,
+				F1472143249B3FFD0073BB18 /* Outline.hpp */,
+				F1472144249B3FFD0073BB18 /* SvgImage.hpp */,
+				F1472145249B3FFD0073BB18 /* String.hpp */,
+				F1472146249B3FFD0073BB18 /* Config.hpp.in */,
+				F1472147249B3FFD0073BB18 /* Color.hpp */,
+				F1472148249B3FFD0073BB18 /* RendererDefines.hpp */,
+				F1472149249B3FFD0073BB18 /* Widget.hpp */,
+				F147214A249B3FFD0073BB18 /* CustomWidgetForBindings.hpp */,
+				F147214B249B3FFD0073BB18 /* Duration.hpp */,
+				F147214C249B3FFD0073BB18 /* Text.hpp */,
+				F147214D249B3FFD0073BB18 /* nanosvg */,
+				F1472152249B3FFD0073BB18 /* Widgets */,
+				F1472176249B3FFD0073BB18 /* Exception.hpp */,
+				F1472177249B3FFD0073BB18 /* Vector2.hpp */,
+			);
+			path = TGUI;
+			sourceTree = "<group>";
+		};
+		F14720D9249B3FFC0073BB18 /* Renderers */ = {
+			isa = PBXGroup;
+			children = (
+				F14720DA249B3FFC0073BB18 /* ChatBoxRenderer.hpp */,
+				F14720DB249B3FFC0073BB18 /* ListViewRenderer.hpp */,
+				F14720DC249B3FFC0073BB18 /* TabsRenderer.hpp */,
+				F14720DD249B3FFC0073BB18 /* ProgressBarRenderer.hpp */,
+				F14720DE249B3FFC0073BB18 /* LabelRenderer.hpp */,
+				F14720DF249B3FFC0073BB18 /* SliderRenderer.hpp */,
+				F14720E0249B3FFC0073BB18 /* BoxLayoutRenderer.hpp */,
+				F14720E1249B3FFC0073BB18 /* ComboBoxRenderer.hpp */,
+				F14720E2249B3FFC0073BB18 /* WidgetRenderer.hpp */,
+				F14720E3249B3FFC0073BB18 /* ScrollbarRenderer.hpp */,
+				F14720E4249B3FFC0073BB18 /* KnobRenderer.hpp */,
+				F14720E5249B3FFC0073BB18 /* ButtonRenderer.hpp */,
+				F14720E6249B3FFC0073BB18 /* EditBoxRenderer.hpp */,
+				F14720E7249B3FFC0073BB18 /* PictureRenderer.hpp */,
+				F14720E8249B3FFC0073BB18 /* ScrollablePanelRenderer.hpp */,
+				F14720E9249B3FFC0073BB18 /* MessageBoxRenderer.hpp */,
+				F14720EA249B3FFC0073BB18 /* ChildWindowRenderer.hpp */,
+				F14720EB249B3FFC0073BB18 /* CheckBoxRenderer.hpp */,
+				F14720EC249B3FFC0073BB18 /* RadioButtonRenderer.hpp */,
+				F14720ED249B3FFC0073BB18 /* RangeSliderRenderer.hpp */,
+				F14720EE249B3FFC0073BB18 /* TreeViewRenderer.hpp */,
+				F14720EF249B3FFC0073BB18 /* PanelRenderer.hpp */,
+				F14720F0249B3FFC0073BB18 /* GroupRenderer.hpp */,
+				F14720F1249B3FFC0073BB18 /* MenuBarRenderer.hpp */,
+				F14720F2249B3FFC0073BB18 /* TextBoxRenderer.hpp */,
+				F14720F3249B3FFC0073BB18 /* SpinButtonRenderer.hpp */,
+				F14720F4249B3FFC0073BB18 /* ListBoxRenderer.hpp */,
+			);
+			path = Renderers;
+			sourceTree = "<group>";
+		};
+		F14720FC249B3FFD0073BB18 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				F14720FD249B3FFD0073BB18 /* DataIO.hpp */,
+				F14720FE249B3FFD0073BB18 /* Serializer.hpp */,
+				F14720FF249B3FFD0073BB18 /* Theme.hpp */,
+				F1472100249B3FFD0073BB18 /* ThemeLoader.hpp */,
+				F1472101249B3FFD0073BB18 /* Deserializer.hpp */,
+				F1472102249B3FFD0073BB18 /* WidgetFactory.hpp */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		F147210E249B3FFD0073BB18 /* Aurora */ = {
+			isa = PBXGroup;
+			children = (
+				F147210F249B3FFD0073BB18 /* Dispatch.hpp */,
+				F1472110249B3FFD0073BB18 /* Tools */,
+				F147211E249B3FFD0073BB18 /* Dispatch */,
+				F1472125249B3FFD0073BB18 /* Config.hpp */,
+				F1472126249B3FFD0073BB18 /* Meta */,
+				F147212B249B3FFD0073BB18 /* Tools.hpp */,
+				F147212C249B3FFD0073BB18 /* Meta.hpp */,
+				F147212D249B3FFD0073BB18 /* SmartPtr.hpp */,
+				F147212E249B3FFD0073BB18 /* README.md */,
+				F147212F249B3FFD0073BB18 /* SmartPtr */,
+				F1472136249B3FFD0073BB18 /* License.txt */,
+			);
+			path = Aurora;
+			sourceTree = "<group>";
+		};
+		F1472110249B3FFD0073BB18 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F1472111249B3FFD0073BB18 /* Hash.hpp */,
+				F1472112249B3FFD0073BB18 /* Downcast.hpp */,
+				F1472113249B3FFD0073BB18 /* Any.hpp */,
+				F1472114249B3FFD0073BB18 /* PImpl.hpp */,
+				F1472115249B3FFD0073BB18 /* Swap.hpp */,
+				F1472116249B3FFD0073BB18 /* Optional.hpp */,
+				F1472117249B3FFD0073BB18 /* NamedTuple.hpp */,
+				F1472118249B3FFD0073BB18 /* Typeid.hpp */,
+				F1472119249B3FFD0073BB18 /* ForEach.hpp */,
+				F147211A249B3FFD0073BB18 /* Exceptions.hpp */,
+				F147211B249B3FFD0073BB18 /* SafeBool.hpp */,
+				F147211C249B3FFD0073BB18 /* Algorithms.hpp */,
+				F147211D249B3FFD0073BB18 /* NonCopyable.hpp */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F147211E249B3FFD0073BB18 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				F147211F249B3FFD0073BB18 /* DoubleDispatcher.hpp */,
+				F1472120249B3FFD0073BB18 /* Detail */,
+				F1472123249B3FFD0073BB18 /* DispatchTraits.hpp */,
+				F1472124249B3FFD0073BB18 /* SingleDispatcher.hpp */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		F1472120249B3FFD0073BB18 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F1472121249B3FFD0073BB18 /* DoubleDispatcher.inl */,
+				F1472122249B3FFD0073BB18 /* SingleDispatcher.inl */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F1472126249B3FFD0073BB18 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				F1472127249B3FFD0073BB18 /* Templates.hpp */,
+				F1472128249B3FFD0073BB18 /* Tuple.hpp */,
+				F1472129249B3FFD0073BB18 /* Variadic.hpp */,
+				F147212A249B3FFD0073BB18 /* Preprocessor.hpp */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		F147212F249B3FFD0073BB18 /* SmartPtr */ = {
+			isa = PBXGroup;
+			children = (
+				F1472130249B3FFD0073BB18 /* CopiedPtr.hpp */,
+				F1472131249B3FFD0073BB18 /* ClonersAndDeleters.hpp */,
+				F1472132249B3FFD0073BB18 /* Detail */,
+				F1472135249B3FFD0073BB18 /* MakeUnique.hpp */,
+			);
+			path = SmartPtr;
+			sourceTree = "<group>";
+		};
+		F1472132249B3FFD0073BB18 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				F1472133249B3FFD0073BB18 /* PtrOwner.hpp */,
+				F1472134249B3FFD0073BB18 /* Factories.hpp */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		F147214D249B3FFD0073BB18 /* nanosvg */ = {
+			isa = PBXGroup;
+			children = (
+				F147214E249B3FFD0073BB18 /* README.txt */,
+				F147214F249B3FFD0073BB18 /* LICENSE.txt */,
+				F1472150249B3FFD0073BB18 /* nanosvg.h */,
+				F1472151249B3FFD0073BB18 /* nanosvgrast.h */,
+			);
+			path = nanosvg;
+			sourceTree = "<group>";
+		};
+		F1472152249B3FFD0073BB18 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F1472153249B3FFD0073BB18 /* TextBox.hpp */,
+				F1472154249B3FFD0073BB18 /* ListBox.hpp */,
+				F1472155249B3FFD0073BB18 /* Tabs.hpp */,
+				F1472156249B3FFD0073BB18 /* ChatBox.hpp */,
+				F1472157249B3FFD0073BB18 /* Slider.hpp */,
+				F1472158249B3FFD0073BB18 /* HorizontalLayout.hpp */,
+				F1472159249B3FFD0073BB18 /* Group.hpp */,
+				F147215A249B3FFD0073BB18 /* ProgressBar.hpp */,
+				F147215B249B3FFD0073BB18 /* ScrollablePanel.hpp */,
+				F147215C249B3FFD0073BB18 /* ComboBox.hpp */,
+				F147215D249B3FFD0073BB18 /* Label.hpp */,
+				F147215E249B3FFD0073BB18 /* Grid.hpp */,
+				F147215F249B3FFD0073BB18 /* Knob.hpp */,
+				F1472160249B3FFD0073BB18 /* EditBox.hpp */,
+				F1472161249B3FFD0073BB18 /* HorizontalWrap.hpp */,
+				F1472162249B3FFD0073BB18 /* BoxLayout.hpp */,
+				F1472163249B3FFD0073BB18 /* MenuBar.hpp */,
+				F1472164249B3FFD0073BB18 /* RadioButtonGroup.hpp */,
+				F1472165249B3FFD0073BB18 /* RadioButton.hpp */,
+				F1472166249B3FFD0073BB18 /* TreeView.hpp */,
+				F1472167249B3FFD0073BB18 /* ClickableWidget.hpp */,
+				F1472168249B3FFD0073BB18 /* MessageBox.hpp */,
+				F1472169249B3FFD0073BB18 /* RangeSlider.hpp */,
+				F147216A249B3FFD0073BB18 /* Panel.hpp */,
+				F147216B249B3FFD0073BB18 /* BitmapButton.hpp */,
+				F147216C249B3FFD0073BB18 /* CheckBox.hpp */,
+				F147216D249B3FFD0073BB18 /* ListView.hpp */,
+				F147216E249B3FFD0073BB18 /* Button.hpp */,
+				F147216F249B3FFD0073BB18 /* VerticalLayout.hpp */,
+				F1472170249B3FFD0073BB18 /* SpinButton.hpp */,
+				F1472171249B3FFD0073BB18 /* BoxLayoutRatios.hpp */,
+				F1472172249B3FFD0073BB18 /* Scrollbar.hpp */,
+				F1472173249B3FFD0073BB18 /* Picture.hpp */,
+				F1472174249B3FFD0073BB18 /* Canvas.hpp */,
+				F1472175249B3FFD0073BB18 /* ChildWindow.hpp */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		F1472178249B3FFD0073BB18 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F1472179249B3FFD0073BB18 /* libtgui.dylib */,
+				F147217A249B3FFD0073BB18 /* libtgui.0.9.0.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		F18BF2922474F1FE00287BE3 = {
 			isa = PBXGroup;
 			children = (
+				F14720D1249B3F8B0073BB18 /* Ext */,
+				F14720CA249B368A0073BB18 /* Assets */,
 				F18BF2A524751B4400287BE3 /* README.md */,
 				F18BF29D2474F1FE00287BE3 /* dvls */,
+				F14720BC249B36550073BB18 /* UI */,
 				F18BF29C2474F1FE00287BE3 /* Products */,
+				F14720C2249B367C0073BB18 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +566,7 @@
 			isa = PBXGroup;
 			children = (
 				F18BF29B2474F1FE00287BE3 /* dvls */,
+				F14720BB249B36550073BB18 /* UI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +582,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F14720BA249B36550073BB18 /* UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F14720BF249B36550073BB18 /* Build configuration list for PBXNativeTarget "UI" */;
+			buildPhases = (
+				F14720B8249B36550073BB18 /* Frameworks */,
+				F14720B9249B36550073BB18 /* CopyFiles */,
+				F14720C9249B367C0073BB18 /* Embed Libraries */,
+				F14720B7249B36550073BB18 /* Sources */,
+				F14720CB249B36900073BB18 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UI;
+			productName = UI;
+			productReference = F14720BB249B36550073BB18 /* UI */;
+			productType = "com.apple.product-type.tool";
+		};
 		F18BF29A2474F1FE00287BE3 /* dvls */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F18BF2A22474F1FE00287BE3 /* Build configuration list for PBXNativeTarget "dvls" */;
@@ -90,9 +624,12 @@
 		F18BF2932474F1FE00287BE3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = aiofwa;
 				TargetAttributes = {
+					F14720BA249B36550073BB18 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					F18BF29A2474F1FE00287BE3 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -112,11 +649,40 @@
 			projectRoot = "";
 			targets = (
 				F18BF29A2474F1FE00287BE3 /* dvls */,
+				F14720BA249B36550073BB18 /* UI */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F14720CB249B36900073BB18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# ln -s ${SRCROOT}/Assets ${BUILT_PRODUCTS_DIR}/Assets\n# ln -s ${SRCROOT}/Ext/TGUI/themes ${BUILT_PRODUCTS_DIR}/themes \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		F14720B7249B36550073BB18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F14720BE249B36550073BB18 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F18BF2972474F1FE00287BE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +694,42 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		F14720C0249B36550073BB18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/sfml/2.5.1/include,
+					"$(SRCROOT)/Ext/TGUI/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/sfml/2.5.1/lib,
+					"$(SRCROOT)/Ext/TGUI/lib",
+					"$(PROJECT_DIR)/Ext/TGUI/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F14720C1249B36550073BB18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/Cellar/sfml/2.5.1/include,
+					"$(SRCROOT)/Ext/TGUI/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/sfml/2.5.1/lib,
+					"$(SRCROOT)/Ext/TGUI/lib",
+					"$(PROJECT_DIR)/Ext/TGUI/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F18BF2A02474F1FE00287BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -240,9 +842,12 @@
 		F18BF2A32474F1FE00287BE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KL2JALR869;
+				DEVELOPMENT_TEAM = 73G2KN78GM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,9 +855,12 @@
 		F18BF2A42474F1FE00287BE3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KL2JALR869;
+				DEVELOPMENT_TEAM = 73G2KN78GM;
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/sfml/2.5.1/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -260,6 +868,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F14720BF249B36550073BB18 /* Build configuration list for PBXNativeTarget "UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F14720C0249B36550073BB18 /* Debug */,
+				F14720C1249B36550073BB18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F18BF2962474F1FE00287BE3 /* Build configuration list for PBXProject "dvls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
