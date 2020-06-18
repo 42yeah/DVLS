@@ -399,6 +399,8 @@ int main(int argc, const char * argv[]) {
     sf::Color lessTransparentNode(250, 248, 100);
     lessTransparentNode.a = 175;
     float zoom = 1.0;
+    float bottomBannerY = size.y + 10.0f;
+    sf::Color bannerColor = warning;
     struct {
         int index;
         sf::Vector2f pos;
@@ -577,18 +579,30 @@ int main(int argc, const char * argv[]) {
             }
         }
         
+        float dy = 0.0f;
+        std::wstring errMsg = L"";
         if (path.first == -1) {
-            sf::RectangleShape shape;
-            shape.setPosition(30.0f, size.y - 60.0f);
-            shape.setSize(sf::Vector2f(size.x - 60.0f, 70.0f));
-            shape.setFillColor(warning);
-            
-            sf::Text error(L"找不到从节点 " + std::to_wstring(firstNode->id) + L" 到节点 " + std::to_wstring(secondNode->id) + L" 的路径", noto);
-            error.setFillColor(sf::Color::White);
-            error.setPosition(50.0f, size.y - 50.0f);
-            window.draw(shape);
-            window.draw(error);
+            dy = (size.y - 50.0f) - bottomBannerY;
+            errMsg = L"找不到从节点 " + std::to_wstring(firstNode->id) + L" 到节点 " + std::to_wstring(secondNode->id) + L" 的路径";
+            bannerColor = warning;
+        } else if (path.first == 1) {
+            dy = (size.y - 50.0f) - bottomBannerY;
+            bannerColor = good;
+            errMsg = L"整条路径花费为 " + std::to_wstring(path.second.cost) + L", 途径 " + std::to_wstring(path.second.path.size() - 1) + L" 个节点";
+        } else {
+            dy = (size.y + 10.0f) - bottomBannerY;
         }
+        sf::RectangleShape shape;
+        shape.setPosition(30.0f, bottomBannerY - 10.0f);
+        shape.setSize(sf::Vector2f(size.x - 60.0f, 70.0f));
+        shape.setFillColor(bannerColor);
+        
+        sf::Text error(errMsg, noto);
+        error.setFillColor(sf::Color::White);
+        error.setPosition(50.0f, bottomBannerY);
+        window.draw(shape);
+        window.draw(error);
+        bottomBannerY += dy * 0.1f;
         
         gui.draw();
         window.display();
